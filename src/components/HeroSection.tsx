@@ -2,46 +2,37 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
 export const HeroSection = () => {
   return (
-    <section className="bg-white pt-32 pb-20 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
-        
-        {/* Textos - Estilo Panorama (Clean) */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-full lg:w-1/2"
-        >
-          <span className="text-gray-500 text-xs font-bold tracking-widest uppercase mb-4 block">
-            Sobre Nós
-          </span>
-          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-[1.1] mb-6 tracking-tight">
-            Há mais de 40 anos transformando <br />
-            <span className="text-gray-400">embalagens em grandes experiências.</span>
-          </h1>
-          <p className="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
-            Somos especialistas em materiais gráficos com corte e acabamentos especiais para o mercado de luxo, corporativo e alimentício.
-          </p>
-          <a href="#orcamento" className="inline-block px-8 py-4 bg-black text-white text-sm font-bold uppercase tracking-wider hover:bg-gray-800 transition-colors">
-            Falar com Especialista
-          </a>
-        </motion.div>
+    <section className="relative min-h-screen flex items-center justify-start overflow-hidden bg-neutral-950">
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+          alt="Engenharia de corte industrial"
+          className="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/50 via-transparent to-neutral-950"></div>
+      </div>
 
-        {/* Imagem */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full lg:w-1/2"
-        >
-          <img 
-            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2070&auto=format&fit=crop" 
-            alt="Embalagens Premium" 
-            className="w-full h-[500px] object-cover rounded-xl shadow-2xl"
-          />
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 mt-20">
+        <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
+          <span className="block text-neutral-400 text-xs md:text-sm font-semibold tracking-[0.25em] uppercase mb-6">
+            Engenharia de Corte de Alta Performance
+          </span>
+          <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-light text-white leading-[1.05] tracking-tight mb-8">
+            Precisão em <br />
+            <span className="font-semibold text-neutral-100">Soluções de Corte.</span>
+          </h1>
+          <p className="text-lg md:text-xl text-neutral-400 max-w-2xl font-light leading-relaxed mb-12">
+            Desenvolvemos facas gráficas e matrizes de altíssima precisão para indústrias que exigem o padrão máximo em suas embalagens.
+          </p>
+          <a href="#orcamento" className="group relative inline-flex items-center justify-center gap-4 px-8 py-5 bg-white text-neutral-950 font-semibold text-xs tracking-[0.1em] uppercase hover:bg-neutral-200 transition-all">
+            <span className="relative z-10">Orçamento Consultivo</span>
+            <ArrowRight className="relative z-10 w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </a>
         </motion.div>
       </div>
     </section>

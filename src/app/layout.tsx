@@ -2,8 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Osascorte | Embalagens Premium',
-  description: 'Há mais de 40 anos transformando embalagens em grandes experiências.',
+  title: 'Osascorte | Engenharia de Embalagens',
+  description: 'Soluções de alta precisão em facas gráficas e embalagens personalizadas.',
 };
 
 export default function RootLayout({
@@ -12,8 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      <body className="antialiased bg-white text-gray-900">
+    <html lang="pt-BR" className="scroll-smooth">
+      {/* Aqui garantimos que a base do site é escura */}
+      <body className="antialiased bg-neutral-950 text-white selection:bg-osas-light/30">
         {children}
       </body>
     </html>

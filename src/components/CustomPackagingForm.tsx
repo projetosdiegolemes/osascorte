@@ -23,41 +23,41 @@ export const CustomPackagingForm = () => {
   const inputClass = "w-full bg-white text-gray-800 border border-gray-300 rounded-md px-4 py-3.5 text-sm focus:ring-1 focus:ring-osas-dark focus:border-osas-dark outline-none transition-all";
 
   return (
-    <section id="orcamento" className="bg-[#f8f9fa] py-24">
+    <section id="orcamento" className="bg-white py-24 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-16">
         
         {/* Lado Esquerdo - Textos (Fundo claro, letras verdes/cinzas) */}
         <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="w-full lg:w-5/12">
-          <h2 className="text-4xl md:text-5xl font-bold text-osas-dark leading-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-4">
             SOLICITE UMA <br />
-            <span className="text-gray-400 font-light tracking-wide">APRESENTAÇÃO</span> <br />
-            PERSONALIZADA
+            <span className="text-slate-400 font-light tracking-wide">APRESENTAÇÃO</span> <br />
+            <span className="text-emerald-800">PERSONALIZADA</span>
           </h2>
-          <div className="w-16 h-1 bg-osas-light mb-8"></div>
-          <p className="text-gray-600 text-lg leading-relaxed font-light">
+          <div className="w-16 h-1 bg-emerald-500 mb-8"></div>
+          <p className="text-slate-600 text-lg leading-relaxed font-medium">
             Conte brevemente sobre sua empresa e o tipo de material que deseja produzir. Nossa equipe vai analisar seu cenário para entender se a Osascorte é a parceira certa para o seu momento.
           </p>
         </motion.div>
 
         {/* Lado Direito - O Formulário Limpo */}
-        <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="w-full lg:w-7/12 bg-white p-8 md:p-12 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-gray-100">
+        <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="w-full lg:w-7/12 bg-white p-8 md:p-12 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-slate-200">
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-            <input type="text" name="empresa" required placeholder="Nome da empresa *" value={formData.empresa} onChange={handleChange} className={inputClass} />
+            <input type="text" name="empresa" required placeholder="Nome da empresa *" value={formData.empresa} onChange={handleChange} className="w-full bg-slate-50 text-slate-900 border border-slate-300 rounded-md px-4 py-3.5 text-sm focus:ring-1 focus:ring-emerald-600 focus:border-emerald-600 outline-none transition-all" />
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <input type="email" name="email" required placeholder="E-mail corporativo *" value={formData.email} onChange={handleChange} className={inputClass} />
-              <input type="tel" name="telefone" required placeholder="Telefone / WhatsApp *" value={formData.telefone} onChange={handleChange} className={inputClass} />
+              <input type="email" name="email" required placeholder="E-mail corporativo *" value={formData.email} onChange={handleChange} className="w-full bg-slate-50 text-slate-900 border border-slate-300 rounded-md px-4 py-3.5 text-sm focus:ring-1 focus:ring-emerald-600 focus:border-emerald-600 outline-none transition-all" />
+              <input type="tel" name="telefone" required placeholder="Telefone / WhatsApp *" value={formData.telefone} onChange={handleChange} className="w-full bg-slate-50 text-slate-900 border border-slate-300 rounded-md px-4 py-3.5 text-sm focus:ring-1 focus:ring-emerald-600 focus:border-emerald-600 outline-none transition-all" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <select name="papel" required value={formData.papel} onChange={handleChange} className={inputClass}>
+              <select name="papel" required value={formData.papel} onChange={handleChange} className="w-full bg-slate-50 text-slate-900 border border-slate-300 rounded-md px-4 py-3.5 text-sm focus:ring-1 focus:ring-emerald-600 focus:border-emerald-600 outline-none transition-all">
                 <option value="" disabled>Tipo de papel</option>
                 <option value="Offset">Papel Offset</option>
                 <option value="Couchê">Papel Couchê</option>
                 <option value="Duplex/Triplex">Duplex / Triplex</option>
                 <option value="Kraft">Kraft Natural</option>
               </select>
-              <select name="impressao" required value={formData.impressao} onChange={handleChange} className={inputClass}>
+              <select name="impressao" required value={formData.impressao} onChange={handleChange} className="w-full bg-slate-50 text-slate-900 border border-slate-300 rounded-md px-4 py-3.5 text-sm focus:ring-1 focus:ring-emerald-600 focus:border-emerald-600 outline-none transition-all">
                 <option value="" disabled>Impressão</option>
                 <option value="1 Cor">1 Cor</option>
                 <option value="Colorida (4 cores)">Colorida (4 cores)</option>
@@ -65,18 +65,18 @@ export const CustomPackagingForm = () => {
             </div>
 
             <div className="mt-4 mb-2">
-              <p className="text-osas-dark text-sm font-bold mb-4">Fabricação apenas acima de 500 unidades:</p>
+              <p className="text-slate-900 text-sm font-bold mb-4">Fabricação apenas acima de 500 unidades:</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {['500 un.', '1.000 un.', '2.000 un.', '+ 2000 un.'].map((qtd) => (
-                  <label key={qtd} className="flex items-center gap-2 cursor-pointer text-gray-600 text-sm hover:text-osas-dark transition-colors">
-                    <input type="radio" name="quantidade" value={qtd} required onChange={handleChange} className="accent-osas-dark w-4 h-4 cursor-pointer" />
+                  <label key={qtd} className="flex items-center gap-2 cursor-pointer text-slate-600 text-sm hover:text-emerald-700 font-medium transition-colors">
+                    <input type="radio" name="quantidade" value={qtd} required onChange={handleChange} className="accent-emerald-600 w-4 h-4 cursor-pointer" />
                     {qtd}
                   </label>
                 ))}
               </div>
             </div>
 
-            <button type="submit" className="mt-4 w-full py-4 bg-osas-dark hover:bg-teal-900 text-white font-bold tracking-wider rounded-md transition-colors uppercase text-sm shadow-lg shadow-osas-dark/30">
+            <button type="submit" className="mt-4 w-full py-4 bg-emerald-700 hover:bg-emerald-800 text-white font-bold tracking-wider rounded-md transition-colors uppercase text-sm shadow-lg shadow-emerald-700/30">
               Solicitar Orçamento ➔
             </button>
           </form>

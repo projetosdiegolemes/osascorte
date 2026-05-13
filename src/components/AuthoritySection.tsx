@@ -47,9 +47,9 @@ export const AuthoritySection = () => {
   };
 
   return (
-    <section className="bg-neutral-950 py-24 md:py-32 overflow-hidden relative">
+    <section className="bg-white py-24 md:py-32 overflow-hidden relative">
       {/* Background Gradient Sutil */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-900/40 via-neutral-950 to-neutral-950 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-50/80 via-white to-white pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         
@@ -65,15 +65,15 @@ export const AuthoritySection = () => {
             <motion.div 
               key={index} 
               variants={itemVariants}
-              className="flex flex-col items-start border-l border-neutral-800 pl-6 md:pl-8"
+              className="flex flex-col items-start border-l border-slate-200 pl-6 md:pl-8"
             >
-              <span className="text-5xl md:text-6xl font-light text-white tracking-tighter mb-4">
+              <span className="text-5xl md:text-6xl font-light text-slate-900 tracking-tighter mb-4">
                 {metric.value}
               </span>
-              <span className="text-sm font-semibold text-neutral-300 uppercase tracking-widest mb-2">
+              <span className="text-sm font-bold text-emerald-700 uppercase tracking-widest mb-2">
                 {metric.label}
               </span>
-              <p className="text-sm text-neutral-500 font-light max-w-[250px]">
+              <p className="text-sm text-slate-500 font-light max-w-[250px]">
                 {metric.description}
               </p>
             </motion.div>
@@ -81,10 +81,10 @@ export const AuthoritySection = () => {
         </motion.div>
 
         {/* Social Proof / Clientes Marquee */}
-        <div className="border-t border-b border-neutral-900 py-12 flex flex-col relative">
+        <div className="border-t border-b border-slate-200 py-12 flex flex-col relative">
           
           <div className="text-center mb-10">
-             <span className="text-neutral-500 text-xs font-semibold tracking-[0.2em] uppercase">
+             <span className="text-slate-500 text-xs font-bold tracking-[0.2em] uppercase">
               Operações industriais que confiam na nossa precisão
             </span>
           </div>
@@ -93,8 +93,8 @@ export const AuthoritySection = () => {
           <div className="w-full overflow-hidden flex relative mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
             
             {/* Fade Edges para suavizar a entrada e saída das logos */}
-            <div className="absolute inset-y-0 left-0 w-24 md:w-48 bg-gradient-to-r from-neutral-950 to-transparent z-10"></div>
-            <div className="absolute inset-y-0 right-0 w-24 md:w-48 bg-gradient-to-l from-neutral-950 to-transparent z-10"></div>
+            <div className="absolute inset-y-0 left-0 w-24 md:w-48 bg-gradient-to-r from-white to-transparent z-10"></div>
+            <div className="absolute inset-y-0 right-0 w-24 md:w-48 bg-gradient-to-l from-white to-transparent z-10"></div>
 
             <motion.div
               className="flex items-center gap-16 md:gap-32 whitespace-nowrap"
@@ -110,7 +110,7 @@ export const AuthoritySection = () => {
                   key={index} 
                   className="flex items-center justify-center opacity-40 hover:opacity-100 transition-opacity duration-300 cursor-default"
                 >
-                  <span className="text-xl md:text-2xl font-bold text-neutral-300 font-serif tracking-widest uppercase">
+                  <span className="text-xl md:text-2xl font-bold text-slate-400 hover:text-emerald-700 transition-colors font-serif tracking-widest uppercase">
                     {client}
                   </span>
                 </div>

@@ -27,7 +27,7 @@ export const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-neutral-950/90 backdrop-blur-md border-b border-neutral-800 py-4' 
+          ? 'bg-white/95 backdrop-blur-md border-b border-slate-200 py-4 shadow-sm' 
           : 'bg-transparent py-6 md:py-8'
       }`}
     >
@@ -35,8 +35,8 @@ export const Header = () => {
         
         {/* Logo */}
         <div className="relative z-20 cursor-pointer">
-          <span className="text-2xl font-semibold text-white tracking-tighter">
-            Osascorte<span className="text-neutral-500 text-3xl leading-none">.</span>
+          <span className="text-2xl font-semibold text-slate-900 tracking-tighter">
+            Osascorte<span className="text-emerald-600 text-3xl leading-none">.</span>
           </span>
         </div>
 
@@ -46,7 +46,7 @@ export const Header = () => {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-sm font-medium text-neutral-400 hover:text-white transition-colors duration-300"
+              className="text-sm font-medium text-slate-600 hover:text-emerald-700 transition-colors duration-300"
             >
               {link.name}
             </a>
@@ -55,18 +55,14 @@ export const Header = () => {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <button className={`px-6 py-2.5 text-xs font-semibold tracking-wider uppercase transition-colors duration-300 ${
-            isScrolled 
-              ? 'bg-white text-neutral-950 hover:bg-neutral-200' 
-              : 'border border-white/30 text-white hover:bg-white hover:text-neutral-950'
-          }`}>
+          <button className="px-6 py-2.5 text-xs font-bold tracking-wider uppercase transition-colors duration-300 bg-emerald-700 text-white hover:bg-emerald-800 rounded shadow-sm">
             Contato Direto
           </button>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden relative z-20 text-neutral-300"
+          className="md:hidden relative z-20 text-slate-900"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -81,20 +77,20 @@ export const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-full left-0 w-full bg-neutral-950 border-b border-neutral-900 shadow-2xl md:hidden"
+            className="absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-2xl md:hidden"
           >
             <div className="flex flex-col px-6 py-8 gap-6">
               {navLinks.map((link) => (
                 <a 
                   key={link.name} 
                   href={link.href}
-                  className="text-lg font-light text-neutral-300"
+                  className="text-lg font-medium text-slate-600"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
-              <button className="mt-4 px-6 py-4 bg-white text-neutral-950 text-sm font-semibold tracking-wider uppercase text-center">
+              <button className="mt-4 px-6 py-4 bg-emerald-700 text-white text-sm font-bold tracking-wider uppercase text-center rounded">
                 Contato Direto
               </button>
             </div>

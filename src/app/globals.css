@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-  background-color: #0a0a0a; /* neutral-950 (Fundo escuro premium) */
-  color: #ffffff; /* Texto branco padrão */
+  background-color: #f8fafc; /* slate-50 (Fundo claro premium) */
+  color: #0f172a; /* slate-900 (Texto escuro padrão) */
 }

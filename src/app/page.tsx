@@ -7,17 +7,19 @@ import { SolutionsGrid } from '../components/SolutionsGrid';
 import { AuthoritySection } from '../components/AuthoritySection';
 import { TechDifferentiator } from '../components/TechDifferentiator';
 import { CustomPackagingForm } from '../components/CustomPackagingForm';
+import CustomerReviews from '../components/CustomerReviews';
 import { Footer } from '../components/Footer';
 
 export default function Page() {
   return (
-    <div className="bg-neutral-950 min-h-screen font-sans">
+    <div className="min-h-screen font-sans bg-slate-50">
       <Header />
       <main>
         <HeroSection />
         <SolutionsGrid />
         <AuthoritySection />
         <TechDifferentiator />
+        <CustomerReviews />
         <CustomPackagingForm />
       </main>
       <Footer />

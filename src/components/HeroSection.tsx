@@ -19,8 +19,7 @@ export const HeroSection = () => {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 mt-20">
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
-          <span className="block text-emerald-700 text-xs md:text-sm font-bold tracking-[0.25em] uppercase mb-6 flex items-center gap-3">
-            <img src="/logo-sacola-online.png" alt="Sacola Online Logo" className="h-8 object-contain" />
+          <span className="block text-emerald-700 text-xs md:text-sm font-bold tracking-[0.25em] uppercase mb-6">
             Parceria Oficial
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-light text-slate-900 leading-[1.05] tracking-tight mb-8">

@@ -12,30 +12,34 @@ export const Footer = () => {
               Osascorte<span className="text-emerald-600 text-3xl leading-none">.</span>
             </span>
             <p className="text-sm text-slate-600 font-light leading-relaxed max-w-sm">
-              Engenharia de precisão em soluções de corte. Desenvolvemos matrizes de alta performance para a indústria de embalagens.
+              Somos especialistas em materiais gráficos com corte e acabamentos especiais. Com mais de 15 anos de atuação, passamos por diversas atualizações e experiências para que o nosso cliente não se preocupe com termos técnicos e foque unicamente em seu produto.
             </p>
           </div>
 
           <div>
             <h4 className="text-slate-900 text-sm font-bold uppercase tracking-wider mb-6">Expertise</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-sm text-slate-600 hover:text-emerald-700 transition-colors">Facas Gráficas Planas</a></li>
-              <li><a href="#" className="text-sm text-slate-600 hover:text-emerald-700 transition-colors">Corte a Laser CNC</a></li>
-              <li><a href="#" className="text-sm text-slate-600 hover:text-emerald-700 transition-colors">Projetos Especiais</a></li>
-              <li><a href="#" className="text-sm text-slate-600 hover:text-emerald-700 transition-colors">Controle de Qualidade</a></li>
+              <li><a href="#produtos" className="text-sm text-slate-600 hover:text-emerald-700 transition-colors">Sacolas de Papel</a></li>
+              <li><a href="#produtos" className="text-sm text-slate-600 hover:text-emerald-700 transition-colors">Caixas de Papelão</a></li>
+              <li><a href="#produtos" className="text-sm text-slate-600 hover:text-emerald-700 transition-colors">Caixas de Papel Cartão</a></li>
+              <li><a href="#produtos" className="text-sm text-slate-600 hover:text-emerald-700 transition-colors">Etiquetas Adesivas</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-slate-900 text-sm font-bold uppercase tracking-wider mb-6">Fale com um Engenheiro</h4>
+            <h4 className="text-slate-900 text-sm font-bold uppercase tracking-wider mb-6">Fale Conosco</h4>
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-sm text-slate-600">
                 <Phone className="w-4 h-4 text-emerald-600" />
-                (11) 3000-0000
+                (11) 4554-6842
               </li>
               <li className="flex items-center gap-3 text-sm text-slate-600">
-                <Mail className="w-4 h-4 text-emerald-600" />
-                projetos@osascorte.com.br
+                <Phone className="w-4 h-4 text-emerald-600" />
+                (11) 3681-5779
+              </li>
+              <li className="flex items-center gap-3 text-sm text-slate-600">
+                <span className="w-4 h-4 flex items-center justify-center text-emerald-600 font-bold text-xs">W</span>
+                (11) 94532-6002 (WhatsApp)
               </li>
             </ul>
           </div>
@@ -46,9 +50,9 @@ export const Footer = () => {
               <li className="flex items-start gap-3 text-sm text-slate-600">
                 <MapPin className="w-4 h-4 text-emerald-600 mt-0.5" />
                 <span>
-                  Polo Industrial, Rua das Matrizes, 1000<br />
-                  Osasco - SP, Brasil<br />
-                  CEP 06000-000
+                  Rua Presidente Castelo Branco 26<br />
+                  Centro, Osasco - SP<br />
+                  CEP 06016-020
                 </span>
               </li>
             </ul>

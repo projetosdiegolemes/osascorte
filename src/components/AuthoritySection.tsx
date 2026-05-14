@@ -19,10 +19,19 @@ const metrics = [
   },
 ];
 
-// Placeholder de "logos" (Em produção, trocar por tags <svg> reais)
+// Lista de logotipos dos clientes da Osascorte
 const clients = [
-  "KLABIN CORP", "TETRA PAK INDUSTRIAL", "INTERNATIONAL PAPER", 
-  "SMURFIT KAPPA", "SUZANO SA", "WESTROCK", "CMPC PACKAGING"
+  { name: 'Bigfood', logo: '/bigfood logo.png' },
+  { name: 'Capitanias', logo: '/capitanias logo.png' },
+  { name: 'Casa Verrone', logo: '/casa verrone logo.png' },
+  { name: 'Clean Up', logo: '/clean up logo.png' },
+  { name: 'Clínica Mauad', logo: '/clinica mauad logo.png' },
+  { name: 'Cristina Sabatini', logo: '/cristina sabatini logo.png' },
+  { name: 'Igreja Batista', logo: '/igreja batista logo.png' },
+  { name: 'Linhanyl', logo: '/linanyl logo.png' },
+  { name: 'Oral Unic', logo: '/oral unic logo.png' },
+  { name: 'Seasons', logo: '/seasons logo.png' },
+  { name: 'Tabelião', logo: '/tabeliao de notas osasco logo.png' }
 ];
 
 // Duplicamos o array para criar o efeito infinito sem quebras
@@ -108,11 +117,13 @@ export const AuthoritySection = () => {
               {duplicatedClients.map((client, index) => (
                 <div 
                   key={index} 
-                  className="flex items-center justify-center opacity-40 hover:opacity-100 transition-opacity duration-300 cursor-default"
+                  className="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-default w-32 md:w-40"
                 >
-                  <span className="text-xl md:text-2xl font-bold text-slate-400 hover:text-emerald-700 transition-colors font-serif tracking-widest uppercase">
-                    {client}
-                  </span>
+                  <img 
+                    src={client.logo} 
+                    alt={`Logo ${client.name}`} 
+                    className="max-h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  />
                 </div>
               ))}
             </motion.div>

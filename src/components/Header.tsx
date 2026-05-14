@@ -18,9 +18,11 @@ export const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Soluções', href: '#' },
-    { name: 'Tecnologia CNC', href: '#' },
-    { name: 'Nossa Indústria', href: '#' },
+    { name: 'Produtos', href: '#produtos' },
+    { name: 'Clientes', href: '#clientes' },
+    { name: 'Diferenciais', href: '#diferenciais' },
+    { name: 'Avaliações', href: '#avaliacoes' },
+    { name: 'FAQ', href: '#faq' },
   ];
 
   return (
@@ -55,9 +57,9 @@ export const Header = () => {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <button className="px-6 py-2.5 text-xs font-bold tracking-wider uppercase transition-colors duration-300 bg-emerald-700 text-white hover:bg-emerald-800 rounded shadow-sm">
+          <a href="#contato" className="inline-block px-6 py-2.5 text-xs font-bold tracking-wider uppercase transition-colors duration-300 bg-emerald-700 text-white hover:bg-emerald-800 rounded shadow-sm">
             Contato Direto
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -90,9 +92,9 @@ export const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <button className="mt-4 px-6 py-4 bg-emerald-700 text-white text-sm font-bold tracking-wider uppercase text-center rounded">
+              <a href="#contato" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 block px-6 py-4 bg-emerald-700 text-white text-sm font-bold tracking-wider uppercase text-center rounded">
                 Contato Direto
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

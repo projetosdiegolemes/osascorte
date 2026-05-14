@@ -4,9 +4,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const solutions = [
-  { id: '01', title: 'Facas Gráficas Planas', desc: 'Matrizes de corte milimétricas para embalagens.', img: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=2070', tags: ['Alta Precisão', 'Embalagens'] },
-  { id: '02', title: 'Corte a Laser CNC', desc: 'Tecnologia de ponta para bases de madeira e acrílico.', img: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070', tags: ['Tecnologia CNC', 'Madeira'] },
-  { id: '03', title: 'Projetos Especiais', desc: 'Engenharia dedicada para cortes não-convencionais.', img: 'https://images.unsplash.com/photo-1580983546524-7be4cc140d3a?q=80&w=2070', tags: ['Consultoria', 'Customização'] },
+  { id: '01', title: 'Caixa cartucho papel cartão', desc: 'Embalagens ideais para produtos diversos com excelente acabamento.', img: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2070', tags: ['Cartão', 'Personalizado'] },
+  { id: '02', title: 'Etiqueta adesiva', desc: 'Identificação e personalização para suas embalagens e produtos.', img: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?q=80&w=2070', tags: ['Adesivos', 'Identificação'] },
+  { id: '03', title: 'Sacola de Papel', desc: 'Sacolas resistentes para o varejo com ótimo custo-benefício.', img: 'https://images.unsplash.com/photo-1550171839-27415be90690?q=80&w=2070', tags: ['Varejo', 'Ecológico'] },
+  { id: '04', title: 'Sacola Papel Cartão', desc: 'Sacolas premium com excelente estrutura e acabamento.', img: 'https://images.unsplash.com/photo-1607344645866-009c320b63e0?q=80&w=2070', tags: ['Premium', 'Resistência'] },
+  { id: '05', title: 'Caixa de papel cartão', desc: 'Caixas versáteis para montagem rápida e segura.', img: 'https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?q=80&w=2070', tags: ['Praticidade', 'Versátil'] },
 ];
 
 export const SolutionsGrid = () => {
@@ -15,8 +17,8 @@ export const SolutionsGrid = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="max-w-2xl">
-            <span className="block text-emerald-700 text-xs font-bold tracking-[0.2em] uppercase mb-4">Nossa Expertise</span>
-            <h2 className="text-4xl md:text-5xl font-light text-slate-900 tracking-tight leading-tight">Engenharia aplicada a <br/><span className="font-bold text-emerald-800">Soluções de Corte.</span></h2>
+            <span className="block text-emerald-700 text-xs font-bold tracking-[0.2em] uppercase mb-4">Nossos Produtos</span>
+            <h2 className="text-4xl md:text-5xl font-light text-slate-900 tracking-tight leading-tight">Soluções completas em <br/><span className="font-bold text-emerald-800">Embalagens e Sacolas.</span></h2>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

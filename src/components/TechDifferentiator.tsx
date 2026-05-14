@@ -7,18 +7,18 @@ import { Crosshair, Cpu, Gauge, ArrowRight } from 'lucide-react';
 const techFeatures = [
   {
     icon: <Cpu className="w-6 h-6 text-neutral-300" />,
-    title: 'Integração CAD/CAM Avançada',
-    description: 'Nossos projetos nascem em softwares de engenharia de última geração, garantindo que o desenho técnico seja traduzido para a máquina sem perda de dados.',
+    title: 'Colagem Automática',
+    description: 'Nossas sacolas e cartuchos são produzidos em máquina de colagem automática, com isso garantimos uma grande produção diária com qualidade sem igual, pois elimina boa parte do acabamento manual. Confiança e pontualidade você encontra aqui.',
   },
   {
     icon: <Crosshair className="w-6 h-6 text-neutral-300" />,
-    title: 'Corte a Laser CNC de Alta Potência',
-    description: 'Bases de madeira cortadas com feixe de laser focado milimetricamente. Zero deformação térmica, garantindo o tensionamento perfeito das lâminas.',
+    title: 'Acabamentos e Enobrecimentos',
+    description: 'Aqui na Osascorte temos várias opções para deixar seu material gráfico mais bonito. Dentro delas temos: Corte especial, Laminação (vários tipos), Hotstamping (impressão metalizada), alto relevo, baixo relevo, verniz localizado, verniz total, Serigrafia, empastamentos além de outros. E o melhor de tudo: Produzimos internamente!',
   },
   {
     icon: <Gauge className="w-6 h-6 text-neutral-300" />,
-    title: 'Controle de Qualidade Tolerância Zero',
-    description: 'Cada matriz passa por uma conferência de esquadro, altura de vinco e emborrachamento antes do envio, eliminando setup demorado na sua máquina.',
+    title: 'Controle de Qualidade Rigoroso',
+    description: 'Revisão minuciosa em cada lote impresso e montado, garantindo que a sua embalagem chegue perfeita e pronta para agregar valor e destacar sua marca no mercado.',
   },
 ];
 

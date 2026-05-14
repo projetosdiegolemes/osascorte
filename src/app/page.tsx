@@ -8,6 +8,7 @@ import { AuthoritySection } from '../components/AuthoritySection';
 import { TechDifferentiator } from '../components/TechDifferentiator';
 import { CustomPackagingForm } from '../components/CustomPackagingForm';
 import CustomerReviews from '../components/CustomerReviews';
+import { FaqSection } from '../components/FaqSection';
 import { Footer } from '../components/Footer';
 
 export default function Page() {
@@ -20,6 +21,7 @@ export default function Page() {
         <AuthoritySection />
         <TechDifferentiator />
         <CustomerReviews />
+        <FaqSection />
         <CustomPackagingForm />
       </main>
       <Footer />

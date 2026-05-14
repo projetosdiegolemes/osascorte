@@ -56,7 +56,7 @@ export const AuthoritySection = () => {
   };
 
   return (
-    <section className="bg-white py-24 md:py-32 overflow-hidden relative">
+    <section id="clientes" className="bg-white py-24 md:py-32 overflow-hidden relative">
       {/* Background Gradient Sutil */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-50/80 via-white to-white pointer-events-none"></div>
 

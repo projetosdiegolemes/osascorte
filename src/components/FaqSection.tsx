@@ -27,7 +27,7 @@ export const FaqSection = () => {
   };
 
   return (
-    <section className="bg-white py-32 border-t border-slate-200">
+    <section id="faq" className="bg-white py-32 border-t border-slate-200">
       <div className="max-w-3xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
           <span className="block text-emerald-700 text-xs font-bold tracking-[0.2em] uppercase mb-4">Suporte</span>

@@ -13,7 +13,7 @@ const solutions = [
 
 export const SolutionsGrid = () => {
   return (
-    <section className="bg-slate-50 py-32 border-t border-slate-200">
+    <section id="produtos" className="bg-slate-50 py-32 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="max-w-2xl">

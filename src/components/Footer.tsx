@@ -8,9 +8,13 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-12">
           
           <div className="lg:col-span-1">
-            <span className="text-2xl font-semibold text-slate-900 tracking-tighter mb-6 block">
-              Osascorte<span className="text-emerald-600 text-3xl leading-none">.</span>
-            </span>
+            <div className="flex flex-col gap-6 mb-6">
+              <img src="/logo-osascorte.png" alt="Osascorte Logo" className="h-10 w-auto object-contain self-start" />
+              <div className="flex items-center gap-2 py-1 px-3 bg-slate-50 border border-slate-200 rounded-full w-fit">
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tight">Uma empresa do grupo</span>
+                <img src="/logo-sacola-online.png" alt="Sacola Online Logo" className="h-4 w-auto grayscale opacity-70" />
+              </div>
+            </div>
             <p className="text-sm text-slate-600 font-light leading-relaxed max-w-sm">
               Somos especialistas em materiais gráficos com corte e acabamentos especiais. Com mais de 15 anos de atuação, passamos por diversas atualizações e experiências para que o nosso cliente não se preocupe com termos técnicos e foque unicamente em seu produto.
             </p>

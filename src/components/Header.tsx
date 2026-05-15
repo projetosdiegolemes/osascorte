@@ -36,10 +36,8 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
         
         {/* Logo */}
-        <div className="relative z-20 cursor-pointer">
-          <span className="text-2xl font-semibold text-slate-900 tracking-tighter">
-            Osascorte<span className="text-emerald-600 text-3xl leading-none">.</span>
-          </span>
+        <div className="relative z-20 cursor-pointer flex items-center gap-4">
+          <img src="/logo-osascorte.png" alt="Osascorte Logo" className="h-10 w-auto object-contain" />
         </div>
 
         {/* Desktop Navigation */}
